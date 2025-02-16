@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+:root {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 5fr 1fr;
+  font-family: 62.5%;
+}
+
+body {
+  grid-column: 2 / 3;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 21rem));
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+img {
+  height: 3rem;
+  width: 5rem;
+}
+
+.col-1 {
+  background-color: #f08c00;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.col-2 {
+  background-color: #006676;
+}
+
+.col-3 {
+  background-color: #043c2b;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 100;
+  letter-spacing: 0.05rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.col-1 a {
+  color: #f08c00;
+}
+
+.col-2 a {
+  color: #006676;
+}
+
+.col-3 a {
+  color: #043c2b;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  width: fit-content;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
